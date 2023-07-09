@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1%;
+  margin-left: 3%;
+  margin-right: 3%;
+
+}
+.logo img {
+  width: 5rem;
+  height: 5rem;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  border-radius: 3rem;
+}

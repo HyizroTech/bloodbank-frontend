@@ -1,5 +1,5 @@
 import React from "react";
-import HomeLayout from "./Home";
+import HomeLayout from "./HomeLayout";
 
 const Layouts = () => {
   return (

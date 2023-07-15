@@ -1,0 +1,29 @@
+.bloodInfoCont {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  margin-top: 10rem;
+}
+
+.bloodInfoCont h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.bottomInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 14rem;
+}
+
+.bottomInfo > img {
+  position: absolute;
+  width: 36%;
+  aspect-ratio: 4/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+  z-index: -1;
+  margin-top: 10rem;
+}

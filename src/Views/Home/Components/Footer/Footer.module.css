@@ -1,0 +1,54 @@
+.footer {
+  background-color: #1e2833;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding: 3rem 10rem;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.getStarted {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.getStarted h4 {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.donateBtn {
+  min-width: 7.5rem;
+  height: 3.125rem;
+  color: #000;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  font-weight: 900;
+  border: transparent;
+  border-radius: 0.625rem;
+}
+
+.footerLogo img {
+  width: 5rem;
+  height: 5rem;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  border-radius: 3rem;
+}
+
+.lineSeprater {
+  min-width: 100%;
+  background-color: #979797;
+  border-color: #979797;
+  margin-top: 2rem;
+}

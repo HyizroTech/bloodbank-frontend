@@ -1,0 +1,31 @@
+.HeroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 40%;
+  margin-top: 10rem;
+  margin-right: 3rem;
+  text-align: right;
+  font-family: "Roboto";
+}
+
+.HeroSection h2 {
+  font-size: 2rem;
+}
+
+.HeroSection p {
+  font-size: 1rem;
+}
+
+.heroBtn {
+  min-width: 10rem;
+  height: 3rem;
+  background-color: black;
+  border: transparent;
+  border-radius: 0.3125rem;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}

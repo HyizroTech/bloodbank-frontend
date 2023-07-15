@@ -1,0 +1,17 @@
+.missionSection {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: #faf8f8;
+  padding: 1rem;
+}
+
+.missionSection h2 {
+  font-family: "Roboto";
+  font-size: 1.7rem;
+}
+
+.missionSection p {
+  font-family: "Roboto";
+  font-size: 1rem;
+}

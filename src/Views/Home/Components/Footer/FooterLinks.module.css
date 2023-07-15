@@ -1,0 +1,18 @@
+.footerLinksCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footerLinks > h3 {
+  color: #ffd2dd;
+  font-family: "DM Sans";
+  font-weight: 400;
+}
+
+.footerLinks > h5 {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 0.8rem;
+  font-weight: 400;
+}

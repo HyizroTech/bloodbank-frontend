@@ -1,0 +1,26 @@
+.loginMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  height: 50vh;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.loginForm > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.emailCont label {
+  padding-left: 2rem;
+}

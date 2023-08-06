@@ -12,6 +12,7 @@ export const RegisterService = {
 
   registerBloodBank: async (credentials) => {
     const result = await axios.post("auth/register/BloodBank", credentials);
+    console.log(result);
     if (result.status === 200) {
       return true;
     } else {

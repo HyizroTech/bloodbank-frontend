@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../../Components/Navbar/Navbar";
 import Header from "../../Components/Header/Header";
 import { RegisterService } from "./services/register.service";
 import styles from "./RegisterBB.module.css";
@@ -41,7 +40,6 @@ const RegisterBloodBank = () => {
 
   return (
     <>
-      <Navbar />
       <div className={styles.registerFormCont}>
         <Header head="Register as a BloodBank" />
         <form className={styles.registerForm} onSubmit={handleFormSubmit}>

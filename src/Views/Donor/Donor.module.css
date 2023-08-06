@@ -1,0 +1,54 @@
+.donorCont {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.donorInfo {
+  min-width: 70%;
+  background-color: #F9F9F9;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  min-width: 80%;
+}
+
+.about > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 5rem;
+}
+
+.info h2{
+  font-size:1rem ;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+
+.donate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate > button{
+  min-width: 10rem;
+  height: 2.4rem;
+  background-color: #000;
+  color: #fff;
+  border: transparent;
+  border-radius: 5px;
+  font-weight: 700;
+}

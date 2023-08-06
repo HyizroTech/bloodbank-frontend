@@ -30,9 +30,6 @@ const NavLinks = () => {
         <li>
           <a href="/#Mission_missionSection__a1g8E">About Us</a>
         </li>
-        <li>
-          <a href="find blood">Find Blood</a>
-        </li>
 
         {isLoggedIn ? (
           <li>

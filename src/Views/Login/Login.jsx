@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";
 import { AuthService } from "./services/auth.service";
-import Navbar from "../../Components/Navbar/Navbar";
 import Header from "../../Components/Header/Header";
+import checkCircle from "../../img/check-circle.png";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -37,11 +37,10 @@ const Login = () => {
 
   return (
     <>
-      <Navbar />
       <div className={styles.loginMain}>
         <Header head="Login" />
         <form className={styles.loginForm} onSubmit={handleSubmit}>
-          <div className={styles.emailCont}>
+          <div className={styles.inputCont}>
             <label>Email</label>
             <input
               className="email"
@@ -51,7 +50,7 @@ const Login = () => {
               placeholder="Email"
             />
           </div>
-          <div>
+          <div className={styles.inputCont}>
             <label>Password</label>
             <input
               className="password"
@@ -61,8 +60,9 @@ const Login = () => {
               placeholder="Password"
             />
           </div>
-          <button className="submit-btn" type="submit">
+          <button className={styles.submitBtn} type="submit">
             LOG IN
+            <img src={checkCircle} alt="" />
           </button>
           {error && <div className="errorMsg">{error}</div>}
         </form>

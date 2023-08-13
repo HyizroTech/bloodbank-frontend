@@ -21,7 +21,7 @@ export const AuthenticationService = {
   getAuthToken: () => {
     if (AuthenticationService.isLoggedIn()) {
       const { value } = StorageService.getAuthKey();
-      return value.token;
+      return value;
     }
     return undefined;
   },

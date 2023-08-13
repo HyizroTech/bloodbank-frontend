@@ -3,6 +3,7 @@ const RegisterDonor = lazy(() => import("../Views/Register/RegisterDonor"));
 const RegisterBloodBank = lazy(() =>
   import("../Views/Register/RegisterBloodBank")
 );
+
 export const RegisterRouter = [
   {
     path: "/register/donor",

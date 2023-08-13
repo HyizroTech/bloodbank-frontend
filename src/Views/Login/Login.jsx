@@ -27,8 +27,8 @@ const Login = () => {
         setError("Invalid Credentials!");
       } else {
         verifiedUser.role === "Donor"
-          ? navigate("/donor/home")
-          : navigate("/bloodbank/home");
+          ? navigate("/donor")
+          : navigate("/bloodbank");
       }
     } catch (error) {
       setError("Something went wrong.");

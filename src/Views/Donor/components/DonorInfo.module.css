@@ -1,0 +1,30 @@
+.donorInfo {
+    min-width: 40%;
+    background-color: #F9F9F9;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  
+  .about > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 5rem;
+  }
+  
+  .info h2{
+    font-size:1rem ;
+    font-family: "Roboto";
+    font-weight: 500;
+  }
+  
+  

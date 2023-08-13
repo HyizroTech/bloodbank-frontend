@@ -33,7 +33,11 @@ const NavLinks = () => {
 
         {isLoggedIn ? (
           <li>
-            <Button value="Logout" onClick={handleLogout} />
+            <Button
+              value="Logout"
+              className={styles.loginBtn}
+              onClick={handleLogout}
+            />
           </li>
         ) : (
           <>

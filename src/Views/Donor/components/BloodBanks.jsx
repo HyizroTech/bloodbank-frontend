@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { AuthenticationService } from "../../../Services";
 import styles from "./BloodBanks.module.css";
+import CreateAppointment from "./CreateAppointment";
 
 const BloodBanks = () => {
   const [bloodBanks, setBloodBanks] = useState([]);
   const [cityFilter, setCityFilter] = useState("");
+  const [modalOpen, setModalOpen] = useState(false);
+  const [clickedBBId, setClickedBBId] = useState("");
 
   useEffect(() => {
     const getAllBloodBanks = async (token) => {
@@ -23,12 +26,14 @@ const BloodBanks = () => {
   }, []);
 
   const filteredBBs = cityFilter
-    ? bloodBanks.filter((bank) => bank.user.city.includes(cityFilter))
+    ? bloodBanks.filter((bank) =>
+        bank.user.city.toLowerCase().includes(cityFilter.toLowerCase())
+      )
     : bloodBanks;
 
   return (
     <div className={styles.bloodBanksCont}>
-      <div>
+      <div className={styles.filter}>
         <label>Filter By City</label>
         <input
           type="text"
@@ -44,9 +49,21 @@ const BloodBanks = () => {
             <h4>{item.user.email}</h4>
             <h4>{item.user.phone}</h4>
           </div>
-          <button>Make Appointment</button>
+          <button
+            onClick={() => {
+              setClickedBBId(item.bloodBankId);
+              setModalOpen(true);
+            }}
+          >
+            Make Appointment
+          </button>
         </div>
       ))}
+      {modalOpen && (
+        <CreateAppointment onClose={() => setModalOpen(false)} id={clickedBBId}>
+          <h2>This Modal</h2>
+        </CreateAppointment>
+      )}
     </div>
   );
 };

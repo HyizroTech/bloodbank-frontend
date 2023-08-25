@@ -148,7 +148,7 @@ const RegisterBloodBank = () => {
               </select>
             </div>
           </div>
-          <button type="submit">Register</button>
+          <button type="submit" className={styles.registerBtn}>Register</button>
         </form>
       </div>
     </>

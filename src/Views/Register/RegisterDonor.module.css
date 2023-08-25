@@ -20,6 +20,7 @@
   align-items: center;
   gap: 1rem;
 }
+
 .formInput {
   height: 2rem;
   background-color: white;
@@ -28,9 +29,24 @@
 }
 
 .userCredentials {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .userCredentials > div {
-    margin-left: .3125rem;
+  margin-left: 0.3125rem;
+}
+
+.registerBtn {
+  max-width: 10rem;
+  height: 3rem;
+  background-color: black;
+  border: transparent;
+  border-radius: 0.3125rem;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
 }

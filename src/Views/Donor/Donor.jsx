@@ -7,7 +7,7 @@ import DonorInfo from "./components/DonorInfo";
 import Appointments from "./components/Appointments";
 
 import axios from "axios";
-import { getDonorId } from "./service/donorId.service";
+import { getUserId } from "../../Services/userId.service";
 
 const Donor = () => {
   const navigate = useNavigate();
@@ -37,7 +37,7 @@ const Donor = () => {
         console.log(error.message);
       }
     };
-    const currentUserId = getDonorId();
+    const currentUserId = getUserId();
     getDonorInfo(currentUserId);
   }, []);
 

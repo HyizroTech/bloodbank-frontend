@@ -5,7 +5,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { TimePicker } from "@mui/x-date-pickers";
 import axios from "axios";
-import { getDonorId } from "../service/donorId.service";
+import { getUserId } from "../../../Services/userId.service";
 import { AuthenticationService } from "../../../Services";
 import { useNavigate } from "react-router-dom";
 
@@ -20,7 +20,7 @@ const CreateAppointment = ({ id, onClose }) => {
       date,
       time,
     };
-    const donorId = getDonorId();
+    const donorId = getUserId();
     const token = AuthenticationService.getAuthToken();
     try {
       const res = await axios.post(

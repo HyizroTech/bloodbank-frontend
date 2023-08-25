@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { getDonorId } from "../service/donorId.service";
+import { getUserId } from "../../../Services/userId.service";
 import { AuthenticationService } from "../../../Services";
-import styles from "./Appointments.module.css"
+import styles from "./Appointments.module.css";
 
 const Appointments = () => {
   const [appointments, setAppointments] = useState([]);
@@ -24,7 +24,7 @@ const Appointments = () => {
         console.log(error.message);
       }
     };
-    const donorId = getDonorId();
+    const donorId = getUserId();
     const token = AuthenticationService.getAuthToken();
     getDonorAppointments(donorId, token);
   }, []);

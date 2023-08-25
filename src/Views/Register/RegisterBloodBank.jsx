@@ -43,55 +43,69 @@ const RegisterBloodBank = () => {
       <div className={styles.registerFormCont}>
         <Header head="Register as a BloodBank" />
         <form className={styles.registerForm} onSubmit={handleFormSubmit}>
-          <label>Name</label>
-          <input
-            type="text"
-            value={name}
-            onChange={(event) => setName(event.target.value)}
-            placeholder="Full Name"
-            required
-          />
-          <label>Email</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            placeholder="Email"
-            required
-          />
-          <label>Password</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-            placeholder="Password"
-            required
-          />
-          <label>Phone</label>
-          <input
-            type="text"
-            value={phone}
-            onChange={(event) => setPhone(event.target.value)}
-            placeholder="Phone Number"
-            required
-          />
-          <label>Country</label>
-          <input
-            type="text"
-            value={country}
-            onChange={(event) => setCountry(event.target.value)}
-            placeholder="Country"
-            required
-          />
-          <label>City</label>
-          <input
-            type="text"
-            value={city}
-            onChange={(event) => setCity(event.target.value)}
-            placeholder="City"
-            required
-          />
-          <button type="submit">Register</button>
+          <div className={styles.inputField}>
+            <label>Name</label>
+            <input
+              type="text"
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div className={styles.inputField}>
+            <label>Email</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div className={styles.inputField}>
+            <label>Password</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div className={styles.inputField}>
+            <label>Phone</label>
+            <input
+              type="text"
+              value={phone}
+              onChange={(event) => setPhone(event.target.value)}
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <div className={styles.inputField}>
+            <label>Country</label>
+            <input
+              type="text"
+              value={country}
+              onChange={(event) => setCountry(event.target.value)}
+              placeholder="Country"
+              required
+            />
+          </div>
+          <div className={styles.inputField}>
+            <label>City</label>
+            <input
+              type="text"
+              value={city}
+              onChange={(event) => setCity(event.target.value)}
+              placeholder="City"
+              required
+            />
+          </div>
+          <button type="submit" className={styles.registerBtn}>
+            Register
+          </button>
         </form>
       </div>
     </>
